@@ -56,7 +56,7 @@ p {
 }
 .bar {
   width: 50px;
-  background-color: #99e2d0;
+  background-color: ;#99e2d0
   height: 2px;
   margin: 5px;
   margin-left: 22px;
@@ -70,19 +70,54 @@ p {
   justify-content: center;
   margin-left: 12px;
   padding: 20px 0px;
+  /* display: none; */
   background-color: #fff;
   box-shadow: 5px 5px 5px rgb(209, 207, 207);
-  position: relative;
+  /* animation-name: show;
+  animation-duration: 3s; */
+}
+
+.container:hover > .green-color {
+  opacity: 1;
+  visibility: visible;
+  width: 80px;
+}
+/* .container:hover > .fa-circle-check {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  left: 30%;
+  top: 35%;
+} */
+.fa-circle-check {
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  color: #fff;
+  /* display: inline-block; */
+  /* visibility: hidden; */
+  /* opacity: 1; */
 }
 .green-color {
-  /* height: 100%; */
-  border: 2px solid red;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 100%;
+  /* border: 2px solid red; */
   background-color: #99e2d0;
-  width: 30%;
+  width: 0px;
+  margin: 0px auto;
   position: absolute;
+  top: 0px;
   right: 0px;
+  /* visibility: hidden; */
+  opacity: 999;
+  /* transition: width ease-in-out 0.3s visibility ease-in-out 0.3s opacity
+    ease-in-out 0.3s alternate; */
+  /* left: 0px; */
+  transition: width 2s;
 }
 button {
+  background-image: linear-gradient(to top, #9356dc, rgba(255, 121, 218, 0.7));
   border-radius: 20px;
   display: inline-block;
   border: none;
