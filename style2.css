@@ -34,13 +34,22 @@ img {
   z-index: 0;
   margin-bottom: -60px;
 }
+.test {
+  animation-name: slideout;
+  animation-duration: 3s;
+  /* visibility: hidden; */
+}
 .main {
+  /* animation-name: slideout;
+  animation-duration: 3s;
+  visibility: hidden; */
   position: relative;
   background-color: rgb(235, 233, 233);
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
-  z-index: 999;
-  margin-bottom: 50px;
+  /* z-index: 999; */
+  padding: 20px;
+  /* margin-bottom: 50px; */
   /* height: 1500px; */
 }
 h1 {
@@ -65,58 +74,51 @@ p {
   margin-left: 22px;
 }
 .container {
-  width: 92%;
-  margin: 25px 0px;
+  width: 98%;
+  margin: 25px auto;
   position: relative;
   /* border: 2px solid red; */
   border-radius: 25px;
   justify-content: center;
-  margin-left: 12px;
   padding: 20px 0px;
-  /* display: none; */
   background-color: #fff;
   box-shadow: 5px 5px 5px rgb(209, 207, 207);
-  /* animation-name: show;
-  animation-duration: 3s; */
 }
-
-.container:hover > .green-color {
-  opacity: 1;
-  visibility: visible;
+@keyframes slideout {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.container:hover > .check-container {
   width: 80px;
-}
-/* .container:hover > .fa-circle-check {
+  height: 100%;
+  /* display: block; */
   visibility: visible;
-  opacity: 1;
-  position: absolute;
-  left: 30%;
-  top: 35%;
-} */
-.fa-circle-check {
-  position: absolute;
-  left: 30%;
-  top: 35%;
-  color: #fff;
-  /* display: inline-block; */
-  /* visibility: hidden; */
-  /* opacity: 1; */
 }
-.green-color {
+.container:hover > .fa-circle-check {
+  transform: rotate(-360deg);
+  display: none;
+}
+.fa-circle-check {
+  /* position: absolute; */
+  margin: 30px;
+  color: #fff;
+}
+.check-container {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  height: 100%;
-  /* border: 2px solid red; */
-  background-color: #99e2d0;
-  width: 0px;
-  margin: 0px auto;
   position: absolute;
+  padding: 0px;
   top: 0px;
   right: 0px;
-  /* visibility: hidden; */
-  opacity: 999;
-  /* transition: width ease-in-out 0.3s visibility ease-in-out 0.3s opacity
-    ease-in-out 0.3s alternate; */
-  /* left: 0px; */
+  width: 0px;
+  background-color: #99e2d0;
+  height: 0px;
+  border: 2px solid red;
+  visibility: hidden;
   transition: width 2s;
 }
 button {
