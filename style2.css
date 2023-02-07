@@ -34,15 +34,17 @@ img {
   z-index: 0;
   margin-bottom: -60px;
 }
-.test {
+/* .test {
   animation-name: slideout;
   animation-duration: 3s;
-  /* visibility: hidden; */
-}
+  color: blue;
+} */
 .main {
   /* animation-name: slideout;
   animation-duration: 3s;
-  visibility: hidden; */
+  visibility: hidden;
+  animation-fill-mode: both;
+  animation-delay: 4s; */
   position: relative;
   background-color: rgb(235, 233, 233);
   border-top-right-radius: 50px;
@@ -53,18 +55,18 @@ img {
   /* height: 1500px; */
 }
 h1 {
-  padding: 22px;
+  /* padding: 22px; */
 }
 h3 {
-  padding: 0px 12px;
+  /* padding: 0px 12px; */
 }
 h2 {
-  font-weight: 900;
+  /* font-weight: 900; */
 }
 h2,
 p {
-  padding: 0px 15px;
-  font-size: 4px;
+  /* padding: 0px 15px; */
+  /* font-size: px; */
 }
 .bar {
   width: 50px;
@@ -74,6 +76,11 @@ p {
   margin-left: 22px;
 }
 .container {
+  animation-name: slideout;
+  animation-duration: 3s;
+  visibility: hidden;
+  animation-fill-mode: both;
+  /* animation-delay: 4s; */
   width: 98%;
   margin: 25px auto;
   position: relative;
@@ -84,9 +91,39 @@ p {
   background-color: #fff;
   box-shadow: 5px 5px 5px rgb(209, 207, 207);
 }
+#c1 {
+  animation-delay: 0.5s;
+}
+#c2 {
+  animation-delay: 1s;
+}
+#c3 {
+  animation-delay: 1.5s;
+}
+#c4 {
+  animation-delay: 2s;
+}
+#c5 {
+  animation-delay: 2.5s;
+}
+#c6 {
+  animation-delay: 3s;
+}
+#c7 {
+  animation-delay: 4.5s;
+}
+#c8 {
+  animation-delay: 5.5s;
+}
+#c9 {
+  animation-delay: 6s;
+}
 @keyframes slideout {
   0% {
     visibility: hidden;
+  }
+  50% {
+    visibility: visible;
   }
   100% {
     visibility: visible;
@@ -98,9 +135,9 @@ p {
   /* display: block; */
   visibility: visible;
 }
-.container:hover > .fa-circle-check {
-  transform: rotate(-360deg);
-  display: none;
+.container:hover .test2 {
+  transform: rotate(360deg);
+  /* display: none; */
 }
 .fa-circle-check {
   /* position: absolute; */
