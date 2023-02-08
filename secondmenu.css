@@ -42,6 +42,7 @@ a.fa-arrow-left {
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   padding: 10px;
+  margin-bottom: 40px;
 }
 .container-bastille {
   /* border: 2px solid red; */
@@ -135,6 +136,7 @@ p {
   width: 80px;
   height: 100%;
   visibility: visible;
+  overflow: hidden;
 }
 .container:hover .test2 {
   transform: rotate(360deg);
@@ -173,9 +175,8 @@ button {
 }
 .footer {
   fill: #fff;
-  z-index: 1;
-  position: relative;
-  padding: 0px 20px;
+  height: 100%;
+  padding: 20px 20px 15px 20px;
   background-color: rgb(44, 44, 44);
 }
 .footer-logo {
