@@ -84,6 +84,9 @@ p {
   border-radius: 25px;
   justify-content: center;
   padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   box-shadow: 5px 5px 5px rgb(209, 207, 207);
 }
@@ -136,6 +139,10 @@ p {
   100% {
     visibility: visible;
   }
+}
+.prices {
+  margin-left: 60px;
+  transition: position ease 2s;
 }
 .container:hover > .check-container {
   width: 80px;
