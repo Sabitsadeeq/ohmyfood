@@ -145,7 +145,7 @@ p {
   transition: position ease 2s;
 }
 .container:hover > .check-container {
-  width: 80px;
+  width: 60px;
   height: 100%;
   visibility: visible;
   overflow: hidden;
@@ -233,16 +233,7 @@ button {
   .container:hover > .check-container {
     width: 120px;
   }
-  h3 {
-    font-size: 24px;
-  }
   h2,
-  p {
-    margin-left: 14px;
-  }
-  h2 {
-    font-size: 32px;
-  }
   p {
     font-size: 24px;
   }
@@ -262,6 +253,21 @@ button {
   .btn {
     margin: auto;
   }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .inner-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  .desserts-box {
+    width: 500px;
+    margin: auto;
+  }
   .footer-logo {
     font-size: 48px;
   }
@@ -270,17 +276,23 @@ button {
   }
 }
 @media screen and (min-width: 1440px) {
+  .sub-main-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .container {
+    margin: 25px 0px;
+  }
   .bastille-text {
     font-size: 64px;
   }
+  .inner-box {
+    justify-content: center;
+    grid-gap: 13px;
+  }
   .container:hover > .check-container {
     width: 130px;
-  }
-  h2 {
-    font-size: 48px;
-  }
-  p {
-    font-size: 42px;
   }
   .btn {
     width: 360px;

@@ -60,7 +60,6 @@ img {
   padding: 17px;
   border-radius: 30px;
   color: #fff;
-  /* font-size: 12px; */
 }
 .btn h1 {
   padding: 10px;
@@ -94,7 +93,6 @@ img {
   text-align: center;
   padding: 2px;
   width: 80px;
-  /* height: 40px; */
   position: absolute;
   right: 15px;
   top: 15px;
@@ -114,7 +112,6 @@ img {
   right: 15px;
   bottom: 20px;
   padding: 15px 20px;
-  /* font-size: 18px; */
 }
 .heart {
   font-size: 18px;
@@ -239,9 +236,6 @@ h4 {
     padding: 5px 0px;
     font-weight: 700;
   }
-  .container {
-    /* border: 2px solid red; */
-  }
   .heart {
     font-size: 24px;
   }
@@ -325,14 +319,9 @@ h4 {
 }
 @media screen and (min-width: 1440px) {
   .location {
-    /* font-size: 36px; */
     height: 70px;
   }
-  .three h2 {
-    /* font-size: 36px; */
-  }
   .three p {
-    /* font-size: 27px; */
     line-height: 1.3;
     padding: 32px 0px;
   }
@@ -364,9 +353,6 @@ h4 {
   h1 {
     font-size: 20px;
     font-weight: 900;
-  }
-  h4 {
-    /* font-size: 36px; */
   }
   .heart {
     font-size: 48px;
