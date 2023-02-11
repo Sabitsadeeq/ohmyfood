@@ -272,7 +272,7 @@ h4 {
   }
   .circle {
     padding: 8px;
-    width: 42px;
+    border-radius: 50%;
   }
   .sub-middle-container {
     display: grid;
@@ -373,7 +373,6 @@ h4 {
   .circle {
     font-size: 24px;
     font-weight: 700;
-    width: 68px;
     top: 17%;
     left: -37px;
   }
