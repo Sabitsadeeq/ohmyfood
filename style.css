@@ -370,11 +370,11 @@ h4 {
   #third-circle-paragraph {
     padding-top: 0px;
   }
+  #third-circle {
+    top: 7px;
+  }
   .circle {
-    font-size: 24px;
-    font-weight: 700;
-    top: 17%;
-    left: -37px;
+    top: 38px;
   }
   .new-first-tag,
   .new-second-tag {
